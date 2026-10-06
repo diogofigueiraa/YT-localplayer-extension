@@ -1,0 +1,48 @@
+/* YT Local Player */
+
+#ytlp-btn {
+  width: 48px !important;
+  height: 48px !important;
+  padding: 0 !important;
+  background: none !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  vertical-align: top !important;
+}
+
+#ytlp-btn svg path {
+  stroke: white !important;
+}
+
+/* Toast */
+#ytlp-toast {
+  position: fixed;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  background: rgba(15, 15, 15, 0.93);
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 9px 18px;
+  border-radius: 6px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.45);
+  z-index: 9999999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  white-space: nowrap;
+  max-width: 90vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#ytlp-toast.ytlp-toast-show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
